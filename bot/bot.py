@@ -19,7 +19,7 @@ days = Day()
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Demoting to Wood IV"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("Smelling like poop"))
 
 
 # command $standings displays the current standings of the league
