@@ -87,8 +87,6 @@ def get_standings(league_id):
     standings_str += '```'
     return standings_str
 
-    return "standings"
-
 
 def get_current_matchups(league_id):
     """
@@ -101,7 +99,6 @@ def get_current_matchups(league_id):
 
     # backticks added for formatting so every char is same width
     matchups_str = '```\n'
-    game = 1
     for match in matchups.values():
         team0 = match[0]
         team1 = match[1]
@@ -117,3 +114,15 @@ def get_current_matchups(league_id):
 
     matchups_str += '```'
     return matchups_str
+
+
+# WILL BE IMPLEMENTED ONCE SLEEPER API SUPPORTS LCS SCORING
+# CURRENTLY THE SLEEPER API PROVIDES ONLY THE BASE POINTS TEAMS EARNED
+# THIS MEANS IT DOESN'T RETURN POINT TOTALS AFTER PICKS/BANS
+def get_current_scores(league_id):
+    """
+    Returns the scores of the current week
+    :param league_id: league id in Sleeper App
+    :return: list of tuples with scores
+    """
+    pass

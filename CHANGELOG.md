@@ -8,3 +8,7 @@
 * Added Procfile for Heroku
 * Added .gitignore to ignore PyCharm files
 * Added requirements.txt for Heroku
+
+# Version 1.1.0
+* Bot now sends updates on standings once every Mon/Fri/Sat/Sun
+* Bot now sends updates every Tuesday on the new matchups

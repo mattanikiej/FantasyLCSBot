@@ -6,14 +6,14 @@ Although this app was created specifically for Fantasy LCS, it should work for a
 ## Current Features
 * $standings - Displays the current standings of the league
 * $matchups - Displays the current matchups of the league
+* Sends update every Monday on current standings
+    * Also sends an update ever Fri/Sat/Sun, but this will be updated to matchup scores when Sleeper API updates
+* Sends updates on new matchups every Tuesday
 
 ## Future Feature Goals (ranked in order of priority)
 * Have $help documentation for server members to use
-* Provide automatic updates on matchups every Monday
-* Provide automatic updates every Fri/Sat/Sun evening
-* Provide automatic updates every Sunday morning on close games
 * See matchup of any specific week
-* Want to display scores but Sleeper API Wrapper doesn't support LCS scoring yet
+* Want to display scores but Sleeper API doesn't support LCS pick/ban scoring yet
 
 ## Author
 Matt Anikiej
