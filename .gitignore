@@ -1,0 +1,4 @@
+# ignores pycharm directories and files
+__pycache__/
+.idea/
+*.iml
