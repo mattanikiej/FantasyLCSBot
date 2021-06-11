@@ -48,9 +48,9 @@ async def on_member_update(before, after):
     tuesday = days.check_tuesday()
 
     # Weekend score updates
-    friday = days.check_friday()
-    saturday = days.check_saturday()
-    sunday = days.check_sunday()
+    # friday = days.check_friday()
+    # saturday = days.check_saturday()
+    # sunday = days.check_sunday()
 
     if monday:
         monday_update = 'MONDAY STANDINGS UPDATE\n'
@@ -59,15 +59,15 @@ async def on_member_update(before, after):
         tuesday_update = 'NEW MATCHUPS UPDATE\n'
         await client.get_channel(channel.id).send(tuesday_update + slp.get_current_matchups(LEAGUE_ID))
     # These three will be used to provide score updates once the API supports LCS scoring
-    if friday:
-        friday_update = 'FRIDAY STANDINGS UPDATE\n'
-        await client.get_channel(channel.id).send(friday_update + slp.get_standings(LEAGUE_ID))
-    if saturday:
-        saturday_update = 'SATURDAY STANDINGS UPDATE\n'
-        await client.get_channel(channel.id).send(saturday_update + slp.get_standings(LEAGUE_ID))
-    if sunday:
-        sunday_update = 'SUNDAY STANDINGS UPDATE\n'
-        await client.get_channel(channel.id).send(sunday_update + slp.get_standings(LEAGUE_ID))
+    # if friday:
+    #     friday_update = 'FRIDAY STANDINGS UPDATE\n'
+    #     await client.get_channel(channel.id).send(friday_update + slp.get_standings(LEAGUE_ID))
+    # if saturday:
+    #     saturday_update = 'SATURDAY STANDINGS UPDATE\n'
+    #     await client.get_channel(channel.id).send(saturday_update + slp.get_standings(LEAGUE_ID))
+    # if sunday:
+    #     sunday_update = 'SUNDAY STANDINGS UPDATE\n'
+    #     await client.get_channel(channel.id).send(sunday_update + slp.get_standings(LEAGUE_ID))
 
 
 client.run(token)

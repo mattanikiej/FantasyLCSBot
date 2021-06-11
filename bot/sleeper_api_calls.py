@@ -72,13 +72,12 @@ def get_standings(league_id):
         # unpack scoreboard
         name = team[0]
         wins = team[1]
-        ties = team[2]
-        losses = team[3]
+        losses = team[2]
 
         name = format_name(name)
 
         # create entry and add it to the table
-        standings_entry = "| {} | {} | {} | {} | {} |\n".format(spot, name, wins, ties, losses)
+        standings_entry = "| {} | {} | {} | {} |\n".format(spot, name, wins, losses)
         standings_str += standings_entry
 
         # increment spot

@@ -12,3 +12,7 @@
 # VERSION 1.1.0
 * Bot now sends updates on standings once every Mon/Fri/Sat/Sun
 * Bot now sends updates every Tuesday on the new matchups
+
+# VERSION 1.1.1
+* removed updates on standings once every Mon/Fri/Sat/Sun
+* updated standings table
